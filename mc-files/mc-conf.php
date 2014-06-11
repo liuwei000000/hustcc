@@ -1,0 +1,1 @@
+<?php $mc_config = array('version'   => '/*MINICMS_VERSION*/','site_link' => 'http://www.hust.cc','site_name' => '华中大网址导航','site_desc' => '又一个MiniCMS网站','user_name' => 'hustcc','user_pass' => 'hustcc','user_nick' => '华中大导航','comment_code' => '');?>
