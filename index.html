@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script type="text/javascript">
+		if (location.href.indexOf('www')<0) location.href = 'http://www.hust.cc/'
+	</script>
+	<title>
+		华中大网址导航 - 华中大学子上网首页
+	</title>
+	<meta name="keywords" content="HUST,HUST.CC,华中大,华中科技大学,huster,华中大学子,华中大网址导航,华中大学子网址导航,华中大学子上网首页" />
+	<meta name="description" content="HUST.CC，一个简单而全面的华中大网址导航，Huster们从这里发现有趣的网站吧。" />
+	<script type="text/javascript" src="./res/js/jquery.1.9.0.min.js"></script>
+	<script type="text/javascript" src="./res/js/jquery.sliphover.min.js"></script>
+	<script type="text/javascript" src="./res/js/cascade.js"></script>
+	<link href="./res/css/reset.css" rel="stylesheet" type="text/css">
+	<link href="./res/style.css" rel="stylesheet" type="text/css">
+	<link href="./res/css/slide.css" rel="stylesheet" type="text/css">
+	<link href="./res/css/right.css" rel="stylesheet" type="text/css">
+	<link href="./res/css/cascade.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<!--<div class="bartop"></div>-->
+	<div class="top-nav">
+		<!--<div class="curcity">我在：杭州</div> -->
+		<div class="login"><span class="login-text">请登录</span><span class="login-icon"> </span></div>
+		<!--<div class="mtime-logo"><a title="" href="."></a></div>-->
+		<ul>
+			<li class="current"><a href=".">首页</a></li>
+			<li><a target="_blank" href="http://lib.hust.cc/">移动图书馆</a></li>
+			<li><a target="_blank" href="http://img.hust.cc/">图片压缩</a></li>
+			<li><a target="_blank" href="http://format.hust.cc/">格式化</a></li>
+			<li><a target="_blank" href="http://md.hust.cc/">MD记事本</a></li>
+			<li><a target="_blank" href="http://alarm.hust.cc/">定时器</a></li>
+			<li><a target="_blank" href="http://www.atool.org/">在线工具</a></li>
+			<li><a target="_blank" href="http://50vip.com/">博客</a></li>
+		</ul>
+	</div>
+	<div class="mtime-box">
+		<div class="bd">
+			<ul>
+				<li d="1" c="#fff" style="background: url(res/images/data/img1.png) 50% 50% no-repeat;">
+					<div class="m-width">
+						<a href="."><img src="res/images/data/img1_1.png"></a>
+					</div>
+				</li>
+				<li d="2" c="#fff" style="background: url(res/images/data/img2.png) 50% 50% no-repeat;">
+					<div class="m-width">
+						<a href="."><img src="res/images/data/img2_2.png"></a>
+					</div>
+				</li>
+				<li d="3" c="#fff" style="display:none;background: url(res/images/data/img3.png) 50% 50% no-repeat;">
+					<div class="m-width">
+					<a href="."><img src="res/images/data/img3_3.png"></a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="mtime-btn">
+			<a class="prev" href="javascript:;"> </a>
+			<a class="next" href="javascript:;"> </a>
+			<div class="hd">
+				<ul>
+					<li class="on">1</li>
+					<li class="">2</li>
+					<li class="">3</li>
+					<li class="">4</li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+			function prevShow() {
+				var curr = $(".bd ul li:visible");
+				if (curr.attr('d') == '1') {
+					prev = $(".bd ul li:last");
+				}
+				else {
+					prev = curr.prev();
+				}
+				curr.hide(300);
+				prev.show(500);
+				$('.hd ul li').attr('class', '');
+				$(".hd ul li:eq("+ (parseInt(prev.attr('d')) - 1) +")").attr('class', 'on');
+				$('.top-nav ul li a').css('color', prev.attr('c'));
+			}
+			function nextShow() {
+				var curr = $(".bd ul li:visible");
+				if (curr.attr('d') == max) {
+					prev = $(".bd ul li:first");
+				}
+				else {
+					prev = curr.next();
+				}
+				curr.hide(300);
+				prev.show(500);
+				$('.hd ul li').attr('class', '');
+				$(".hd ul li:eq("+ (parseInt(prev.attr('d')) - 1) +")").attr('class', 'on');
+				$('.top-nav ul li a').css('color', prev.attr('c'));
+			}
+			
+			var max = $(".bd ul li:last").attr('d');
+			$(".prev").click(function(){
+				prevShow();
+			});
+			$(".next").click(function(){
+				nextShow();
+			});
+			//启动切换的定时器
+			interval = setInterval(nextShow, "5000");
+		</script>
+	</div>
+	<div id="content">
+		<div class="i_content">
+			<div class="c_left">
+				<div class="slide" id="container">
+					<ul>
+						<li>
+							<a target="_blank" href="http://img.hust.cc/"><img src="res/images/data/img.png" title="<h3 style='color:yellow'>图片优化压缩</h3><hr/>" /></a>
+						</li>
+						<li>
+							<a target="_blank" href="http://lib.hust.cc/"><img src="res/images/data/lib.png" title="<h3 style='color:yellow'>移动图书管</h3><hr/>" /></a>
+						</li>
+						<li>
+							<a target="_blank" href="http://alarm.hust.cc/"><img src="res/images/data/alarm.png" title="<h3 style='color:yellow'>在线定时器</h3><hr/>" /></a>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.atool.org/"><img src="res/images/data/atool.png" title="<h3 style='color:yellow'>在线工具</h3><hr/>" /></a>
+						</li>
+					</ul>
+				</div>
+				<div id="wrapper">
+					 <div class="h-list">
+					 	<div class="h-bd cle" id="h-waterfall">
+					 		<div class="item" id="h-a">
+								<h3>Hust.cc</h3>
+								<p><a href="http://img.hust.cc/" target="_blank">图片优化压缩</a></p>
+								<p><a href="http://lib.hust.cc/" target="_blank">移动图书馆</a></p>
+								<p><a href="https://alarm.hust.cc/" target="_blank">在线定时器</a></p>
+								<p><a href="http://md.hust.cc/" target="_blank">MarkDown</a></p>
+								<p><a href="http://format.hust.cc/" target="_blank">代码格式化</a></p>
+								<p><a href="http://www.atool.org/" target="_blank">在线工具</a></p>
+							</div>
+							<div class="item" id="h-b">
+								<h3>华中大网址</h3>
+								<p><a href="http://www.hust.edu.cn/" target="_blank">华中大官网</a></p>
+								<p><a href="http://bbs.whnet.edu.cn/" target="_blank">白云黄鹤BBS</a></p>
+								</div>
+							<div class="item" id="h-c">
+								<h3>Huster相关</h3>
+								<p><a href="http://bbs.whnet.edu.cn/" target="_blank">白云黄鹤BBS</a></p>
+							</div>
+							<div class="item" id="h-c">
+								<h3>社交</h3>
+								<p><a href="http://weibo.com/" target="_blank">新浪微博</a></p>
+								<p><a href="http://www.renren.com/" target="_blank">人人</a></p>
+								<p><a href="http://www.douban.com/" target="_blank">豆瓣</a></p>
+							</div>
+					 	</div>
+					 </div>
+				</div>
+				<script> $('#h-waterfall').cascade(); </script>
+			</div>
+			<script type="text/javascript">
+				$(function(){
+					$('#container').sliphover();
+				});
+			</script>
+			<div class="c_right">
+				<div class="links">
+					<div class="u-tt"><h2>推荐站点</h2><i class="i2"> </i></div>
+					<div class=m-pd>
+						<div class="itm">
+							<h3 class="i4">推荐</h3> 
+							<ul>
+								<li><a href="http://weibo.com/" target="_blank">新浪微博</a></li>
+								<li><a href="http://mail.163.com/" target="_blank">163邮箱</a></li>
+							</ul> 
+						</div>
+						<div class="itm itm-even">
+							<h3 class="i1">社区</h3>
+							<ul>
+								<li><a href="http://www.douban.com/" target="_blank">豆瓣</a></li>
+								<li><a href="http://www.renren.com/" target="_blank">人人</a></li>
+							</ul>
+						</div>
+						<div class="itm">
+							<h3 class="i2">游戏</h3> 
+							<ul> 
+								<li><a href="http://xyq.163.com/" target="_blank">梦幻西游</a></li> 
+								<li><a href="http://xy2.163.com/" target="_blank">大话西游Ⅱ</a></li> 
+								<li><a href="http://xy3.163.com/" target="_blank">大话西游3</a></li> 
+								<li><a href="http://pk.163.com/" target="_blank">战歌</a></li> 
+								<li><a href="http://www.warcraftchina.com/" target="_blank">魔兽世界</a></li> 
+								<li><a href="http://www.starcraft2.com.cn" target="_blank">星际争霸Ⅱ</a></li> 
+								<li><a href="http://tx3.163.com/" target="_blank">天下3</a></li> 
+								<li><a href="http://qn.163.com/" target="_blank">倩女幽魂</a></li> 
+								<li><a href="http://wh.163.com/" target="_blank">武魂</a></li> 
+								<li><a href="http://ff.163.com/" target="_blank">新飞飞</a></li> 
+								<li><a href="http://dt2.163.com/" target="_blank">大唐无双2</a></li> 
+								<li><a href="http://zh.163.com/" target="_blank">斩魂</a></li> 
+							</ul> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<span>© 2014  Hust.cc 版权所有</span>
+		</div>
+	</div>
+</body>
+</html>

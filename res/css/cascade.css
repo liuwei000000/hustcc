@@ -1,0 +1,13 @@
+#wrapper{width: 720px; margin: 15px auto;}
+#wrapper a{text-decoration:none; color:#333; -webkit-transition: color .2s;-moz-transition: color .2s;-o-transition: color .2s; -ms-transition: color .2s;transition: color .2s;}
+#wrapper a:hover{text-decoration:underline; color: #ff7d8e;}
+#wrapper a:focus{outline:none;}
+
+::selection {background:#ff7d8e; color:#fff;} 
+
+.h-list{ margin-left: -10px;}
+.h-list .h-bd{position: relative; margin-left: 10px; margin-top: 5px;}
+.h-list .item,.h-list .additem{position: absolute; width: 180px; background-color: #f8f8f8; border: 1px solid #f8f8f8; padding: 10px 18px 10px 18px; top:0; left: 40%; -webkit-transition: all 0.3s;-moz-transition: all 0.3s;-o-transition: all 0.3s;-ms-transition: all 0.3s;transition: all 0.3s;font: 14px/1.5 Microsoft YaHei,Tahoma,Helvetica,Arial,simsun;}
+.h-list .hover{box-shadow: 0px 1px 8px rgba(200,200,200,.6); background-color: #fff; border-color: #c8c8c8;}
+.h-list .item h3{border-bottom: 2px solid #d60000; padding-bottom: 5px;font-size: 25px; color: #222; font-family: arial; font-weight: bold; line-height: .8; margin-bottom: 10px;}
+.h-list .item p{margin-bottom: 5px;}
