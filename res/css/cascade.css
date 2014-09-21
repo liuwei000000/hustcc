@@ -9,5 +9,5 @@
 .h-list .h-bd{position: relative; margin-left: 10px; margin-top: 5px;}
 .h-list .item,.h-list .additem{position: absolute; width: 180px; background-color: #f8f8f8; border: 1px solid #f8f8f8; padding: 10px 18px 10px 18px; top:0; left: 40%; -webkit-transition: all 0.3s;-moz-transition: all 0.3s;-o-transition: all 0.3s;-ms-transition: all 0.3s;transition: all 0.3s;font: 14px/1.5 Microsoft YaHei,Tahoma,Helvetica,Arial,simsun;}
 .h-list .hover{box-shadow: 0px 1px 8px rgba(200,200,200,.6); background-color: #fff; border-color: #c8c8c8;}
-.h-list .item h3{border-bottom: 2px solid #d60000; padding-bottom: 5px;font-size: 21px; color: #222; font-family: arial; font-weight: bold; line-height: .8; margin-bottom: 10px;}
+.h-list .item h3{border-bottom: 2px solid #d60000; padding-bottom: 5px;font-size: 20px; color: #222; font-family: arial; font-weight: bold; line-height: .8; margin-bottom: 10px;}
 .h-list .item p{margin-bottom: 5px;}
