@@ -1,3 +1,7 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www.hust.cc$ [NC]
+RewriteRule ^(.*)$ http://www.hust.cc/$1 [L,R=301]
+
 #GZIP压缩模块配置
 <ifmodule mod_deflate.c>
 #启用对特定MIME类型内容的压缩
