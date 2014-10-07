@@ -3,6 +3,10 @@ body,div,ul,li,dl,dt,dd,h2,p{padding:0;margin:0; font-family:"微软雅黑";}
 ul{list-style:none ;}
 img{border:none;}
 a{blr:expression(this.onFocus=this.blur());outline:none;}
+.hidden {display:none;}
+#wrapper .more a {margin-left:60%;font-size:12px;}
+.qtip-more-sites {width:200px; }
+.qtip-more-sites p {margin-bottom: 5px;line-height: 18px;margin-left:10px;}
 
 .bartop { height: 9px; background: url(images/foot.png) repeat-x top center; position: relative; overflow: hidden; }
 .top-nav { width: 1000px; position: absolute; left: 50%; margin-left: -500px; z-index:99; }
@@ -10,25 +14,26 @@ a{blr:expression(this.onFocus=this.blur());outline:none;}
 .top-nav ul li a { color: #fff; text-decoration: none; padding:0 5px 5px 5px; }
 .top-nav ul li  a:hover,.top-nav ul li.current a {border-bottom: 4px #FFFFFF solid; }
 .top-nav .curcity,.login {position: absolute; top: 15px; height: 29px; line-height: 29px; color: #FFFFFF; font-size: 14px; text-indent: 10px;border: 1px #CDE4EC solid; border-radius :3px; }
-.top-nav .curcity { right: 98px; width: 108px; background: url(images/topbar_02.png) no-repeat 88px 3px; }
+/*.top-nav .curcity { right: 98px; width: 108px; background: url(images/topbar_02.png) no-repeat 88px 3px; }*/
+.top-nav .curcity { right: 40px; width: 160px;  no-repeat 88px 3px; }
 .top-nav .login { width: 90px; right: 0px; }
 .top-nav .login-text,.login-icon { display: block;  float: left; }
 .top-nav .login-text { padding-right: 10px; }
 .top-nav .login-icon {width: 27px; height: 29px; border-left: 1px #CFCFD0 solid; background: url(images/topbar_03.png) no-repeat center center;}
 
-.mtime-box { min-width: 1000px; height: 350px; position: relative; overflow: hidden; }
+.mtime-box { min-width: 1000px; height: 200px; position: relative; overflow: hidden; }
 .mtime-box .bd{ width:100% !important; }
-.mtime-box .bd li .m-width {width: 1022px; padding-top: 94px; margin:0 auto; overflow: hidden; }
+.mtime-box .bd li .m-width {width: 1022px; padding-top: 90px; margin:0 auto; overflow: hidden; }
 .mtime-box .bd li { width:100% !important; height: 500px; }
 .mtime-box .bd li a { display: block; background: url(images/index_shadow.png) no-repeat 0 0; background-size: auto; padding: 11px 11px 0 11px; }
 
-.mtime-btn { width: 1022px; position: absolute; top: 200px; left: 50%; margin-left: -511px; }
+.mtime-btn { width: 1022px; position: absolute; top: 100px; left: 50%; margin-left: -511px; }
 .mtime-btn a { display: block; width: 49px; height: 104px; position: absolute; top: 0; filter: alpha(opacity=40); -moz-opacity: 0.4; -khtml-opacity: 0.4; opacity: 0.4; }
-.mtime-btn a.prev { left: -30px; background: url(images/foot.png) no-repeat -1822px -9px; } 
-.mtime-btn a.next { right: -30px; background: url(images/foot.png) no-repeat right -9px; }
+.mtime-btn a.prev { left: -30px; background: url(images/foot.png) no-repeat -1822px -9px; zoom:0.6;} 
+.mtime-btn a.next { right: -30px; background: url(images/foot.png) no-repeat right -9px; zoom:0.6;}
 
-.mtime-box .hd {position: absolute; top: 90px; right: 10px; }
-.mtime-box .hd ul li { width: 12px; height: 12px; border-radius :50%; text-indent: -9999px; margin-right: 20px; background: #A0A1A4; border: 1px #A0A1A4 solid; float: left; cursor: pointer; }
+.mtime-box .hd {position: absolute; top: 60px; right: 10px; zoom:0.7;}
+.mtime-box .hd ul li {width: 12px; height: 12px; border-radius :50%; text-indent: -9999px; margin-right: 20px; background: #A0A1A4; border: 1px #A0A1A4 solid; float: left; cursor: pointer; }
 .mtime-box .hd ul li.on { background:  #FFFFFF; }
 
 #content {width: 1022px; height: 230px; background: url(images/index_shadow.png) no-repeat 0 -310px; margin:0 auto; }
@@ -38,3 +43,9 @@ a{blr:expression(this.onFocus=this.blur());outline:none;}
 
 
 .footer {margin:5px auto;padding:10px 0;font: 12px/1.14 Microsoft YaHei,Tahoma,Helvetica,Arial,simsun;border-top:1px solid #cfcfcf;}
+/*返回顶部*/
+.returnTop{ font-size:12px;width:955px; height:0px; position:relative; margin:0px auto;}
+.returnTop .box{ position:fixed; display:block; _display:none; width:36px; height:36px; margin-left:800px; bottom:-60px; background:url(./images/returnBgX.png) repeat ; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;   cursor:pointer;}
+.returnTop .box a{ display:block; width:36px; height:36px;  float: left; background:url(./images/returnTopIco.gif) no-repeat 11px 10px; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;  }
+.returnTop .box a:hover{background-color:#6e6e6e;}
+.returnTop .box span{ float: left; line-height:36px; color:#e6e6e6; margin-left:6px;}

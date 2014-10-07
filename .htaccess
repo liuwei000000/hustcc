@@ -1,6 +1,6 @@
-RewriteEngine On
-RewriteCond %{HTTP_HOST} !^www.hust.cc$ [NC]
-RewriteRule ^(.*)$ http://www.hust.cc/$1 [L,R=301]
+#RewriteEngine On
+#RewriteCond %{HTTP_HOST} !^www.hust.cc$ [NC]
+#RewriteRule ^(.*)$ http://www.hust.cc/$1 [L,R=301]
 
 #GZIP压缩模块配置
 <ifmodule mod_deflate.c>
