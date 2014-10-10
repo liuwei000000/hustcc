@@ -42,7 +42,7 @@ a{blr:expression(this.onFocus=this.blur());outline:none;}
 .i_content .c_left{float:left;width:750px;border-right:1px solid #cfcfcf;}
 
 
-.footer {margin:5px auto;padding:10px 0;font: 12px/1.14 Microsoft YaHei,Tahoma,Helvetica,Arial,simsun;border-top:1px solid #cfcfcf;}
+.footer {margin:5px auto;padding:10px 10px;font: 12px/1.14 Microsoft YaHei,Tahoma,Helvetica,Arial,simsun;border-top:1px solid #cfcfcf;}
 /*返回顶部*/
 .returnTop{ font-size:12px;width:955px; height:0px; position:relative; margin:0px auto;}
 .returnTop .box{ position:fixed; display:block; _display:none; width:36px; height:36px; margin-left:800px; bottom:-60px; background:url(./images/returnBgX.png) repeat ; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;   cursor:pointer;}

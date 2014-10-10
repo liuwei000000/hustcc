@@ -1,18 +1,17 @@
 <!DOCTYPE HTML>
 <?php 
+require_once('inc/301.php');
 require_once('data/inc.sites.php');
 $max_len = 5;
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<script type="text/javascript">
-		if (location.href.indexOf('www')<0) location.href = 'http://www.hust.cc/'
-	</script>
+	<link rel="author" href="https://plus.google.com/117054904202244414422?rel=author">
 	<title>
-		华中大网址导航 - 华中大学子上网首页 - 华中大学子网
+		华中大导航网 - 华中大网址导航 - 华中大学子网 - 华中大学子上网首页
 	</title>
-	<meta name="keywords" content="HUST,HUST.CC,华中大,华中科技大学,huster,华中大学子,华中大学子网,华中大网址导航,华中科技大学网址导航,华中大学子网址导航,华中大学子上网首页" />
+	<meta name="keywords" content="HUST,HUST.CC,华中大,华中科技大学,huster,华中大导航网,华中大学子,华中大学子网,华中大网址导航,华中科技大学网址导航,华中大学子网址导航,华中大学子上网首页" />
 	<meta name="description" content="HUST.CC，一个简单而全面的华中大学子网址导航，Huster们从这里发现有趣的网站吧。" />
 	<script type="text/javascript" src="./res/js/jquery.1.9.0.min.js"></script>
 	<script type="text/javascript" src="./res/js/jquery.sliphover.min.js"></script>
@@ -36,7 +35,6 @@ $max_len = 5;
 			<li><a target="_blank" rel="nofollow" href="http://www.hustonline.net/">华中大在线</a></li>
 			<li><a target="_blank" rel="nofollow" href="http://bbs.whnet.edu.cn/">白云黄鹤BBS</a></li>
 			<li><a target="_blank" rel="nofollow" href="http://hub.hust.edu.cn/">HUB系统</a></li>
-			<li><a target="_blank" rel="nofollow" href="http://jwc.hust.edu.cn/">华中大教务处</a></li>
 			<li><a target="_blank" rel="nofollow" href="http://weibo.com/husterscn/">关注微博</a></li>
 		</ul>
 	</div>
@@ -133,11 +131,13 @@ $max_len = 5;
 							$site_len = 0;
 							$site_type = null;
 							$site = null;
+							
 							for ($i = 0; $i < $sites_type_len; $i++) {
+								/*$max_len = mt_rand(4,6); */ //增加首页网址显示的随机性
 								$site_type = $sites[$i];
 								echo '<div class="item">';
-								echo '<h3>'.$site_type['name'].'</h3>';
 								$site_len = count($site_type['data']);
+								echo '<h3>'.$site_type['name'].'<span>('.$site_len.')</span></h3>';
 								for ($j = 0; $j < $site_len; $j ++) {
 									$site = $site_type['data'][$j];
 									echo '<p class="'. ($j >= $max_len ? 'hidden': 'show') .'"><a href="'.$site['url'].'" rel="nofollow" title="'.$site['name'].'" target="_blank">'.$site['name'].'</a></p>';
@@ -180,9 +180,18 @@ $max_len = 5;
 							</ul>
 						</div>
 						<div class="itm">
-							<h3 class="i2">其他</h3> 
+							<h3 class="i2">Hust.cc</h3> 
 							<ul> 
 								<li><a href="http://50vip.com/" rel="nofollow" target="_blank">红色石头</a></li>
+								<li><a href="http://www.atool.org/" rel="nofollow" target="_blank">在线工具</a></li>
+								<li><a href="http://alarm.hust.cc/" rel="nofollow" target="_blank">在线定时器</a></li>
+								<li><a href="http://diff.hust.cc/" rel="nofollow" target="_blank">文本Diff</a></li>
+								<li><a href="http://img.hust.cc/" rel="nofollow" target="_blank">图片优化</a></li>
+								<li><a href="http://format.hust.cc/" rel="nofollow" target="_blank">代码格式化</a></li>
+								<li><a href="http://jquery.hust.cc/" rel="nofollow" target="_blank">Jquery文档</a></li>
+								<li><a href="http://lua.hust.cc/" rel="nofollow" target="_blank">Lua文档</a></li>
+								<li><a href="http://lib.hust.cc/" rel="nofollow" target="_blank">华中大图书馆</a></li>
+								<li><a href="http://md.hust.cc/" rel="nofollow" target="_blank">MD编辑器</a></li>
 							</ul> 
 						</div>
 					</div>
@@ -190,7 +199,7 @@ $max_len = 5;
 			</div>
 		</div>
 		<div class="footer">
-			<span>© 2014  <a href="http://weibo.com/husterscn" target="_blank" title="华中大学子网" rel="nofollow">Hust.cc</a> 版权所有&nbsp;&nbsp;&nbsp;&nbsp;Update at 2014-10-07</span>
+			<span>© 2014  <a href="http://weibo.com/husterscn" target="_blank" title="华中大学子网" rel="nofollow">Hust.cc</a> 版权所有&nbsp;&nbsp;&nbsp;&nbsp;Update at 2014-10-08</span>
 		</div>
 		<!--返回顶部-->
 		<div class="returnTop">
@@ -201,7 +210,7 @@ $max_len = 5;
 		</div>
 		<!--结束 返回顶部-->
 	</div>
-	<span style="display:none;"><script src="http://s17.cnzz.com/stat.php?id=5763499&web_id=5763499" language="JavaScript"></script></span>
+	<span style="display:none;"><script src="http://s22.cnzz.com/stat.php?id=1253385992&web_id=1253385992" language="JavaScript"></script></span>
 	<script type="text/javascript" src="./res/js/jquery.qtip.min.js"></script>
 	<script type="text/javascript" src="./res/js/script.js"></script>
 </body>
