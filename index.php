@@ -4,7 +4,7 @@ require_once('inc/301.php');
 require_once('data/inc.sites.php');
 $max_len = 5;
 ?>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wb="http://open.weibo.com/wb">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<link rel="author" href="https://plus.google.com/117054904202244414422?rel=author">
@@ -22,6 +22,7 @@ $max_len = 5;
 	<link href="./res/css/right.css" rel="stylesheet" type="text/css">
 	<link href="./res/css/cascade.css" rel="stylesheet" type="text/css">
 	<link href="./res/css/jquery.qtip.min.css" rel="stylesheet" type="text/css">
+	<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 	<!--<div class="bartop"></div>-->
@@ -35,7 +36,7 @@ $max_len = 5;
 			<li><a target="_blank" rel="nofollow" href="http://www.hustonline.net/">华中大在线</a></li>
 			<li><a target="_blank" rel="nofollow" href="http://bbs.whnet.edu.cn/">白云黄鹤BBS</a></li>
 			<li><a target="_blank" rel="nofollow" href="http://hub.hust.edu.cn/">HUB系统</a></li>
-			<li><a target="_blank" rel="nofollow" href="http://weibo.com/husterscn/">关注微博</a></li>
+			<li><wb:follow-button uid="3505855672" type="red_2" width="136" height="24" >关注微博</wb:follow-button></li>
 		</ul>
 	</div>
 	<div class="mtime-box">
@@ -196,7 +197,7 @@ $max_len = 5;
 			</div>
 		</div>
 		<div class="footer">
-			<span>© 2014  <a href="http://weibo.com/husterscn" target="_blank" title="华中大学子网" rel="nofollow">Hust.cc</a> 版权所有&nbsp;&nbsp;&nbsp;&nbsp;Update at 2014-10-08</span>
+			<span>© 2014  <a href="http://weibo.com/husterscn" target="_blank" title="华中大学子网" rel="nofollow">Hust.cc</a> 版权所有&nbsp;&nbsp;&nbsp;&nbsp;<wb:publish action="pubilish" type="web" language="zh_cn" button_type="red" button_size="small" button_text="分享" uid="3505855672" default_text="华中大网址导航，Huster最好的上网首页 http://www.hust.cc/" tag="华中大网址导航" refer="y" default_image="http%3A%2F%2Fwww.hust.cc%2Fres%2Fimages%2Fshare%2Fshare.png,http%3A%2F%2Fwww.hust.cc%2Fres%2Fimages%2Fdata%2Fimg1.jpg" appkey="54bvjH" ></wb:publish></span>
 		</div>
 		<!--返回顶部-->
 		<div class="returnTop">
