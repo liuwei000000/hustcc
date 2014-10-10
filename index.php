@@ -41,12 +41,12 @@ $max_len = 5;
 	<div class="mtime-box">
 		<div class="bd">
 			<ul>
-				<li d="1" c="#fff" style="background: url(res/images/data/img1.jpg) 50% 50% no-repeat;">
+				<li d="1" c="#fff" style="background: url(res/images/data/img1.jpg) 50% 50% repeat-x;">
 					<div class="m-width">
 						<a href="."><img src="res/images/data/img1_1.jpg"></a>
 					</div>
 				</li>
-				<li d="2" c="#fff" style="background: url(res/images/data/img2.jpg) 50% 50% no-repeat;">
+				<li d="2" c="#fff" style="background: url(res/images/data/img2.jpg) 50% 50% repeat-x;">
 					<div class="m-width">
 						<a href="."><img src="res/images/data/img2_2.jpg"></a>
 					</div>
@@ -126,6 +126,7 @@ $max_len = 5;
 						</li>
 					</ul>
 				</div>
+				<script type="text/javascript"> $('#container').sliphover(); </script>
 				<div id="wrapper">
 					 <div class="h-list">
 					 	<div class="h-bd cle" id="h-waterfall">
@@ -154,15 +155,8 @@ $max_len = 5;
 					 	</div>
 					 </div>
 				</div>
-				<script> 
-					$('#h-waterfall').cascade();
-				</script>
+				<script>$('#h-waterfall').cascade();</script>
 			</div>
-			<script type="text/javascript">
-				$(function(){
-					$('#container').sliphover();
-				});
-			</script>
 			<div class="c_right">
 				<div class="links">
 					<div class="u-tt"><h2>推荐站点</h2><i class="i2"> </i></div>
