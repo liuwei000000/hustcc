@@ -110,6 +110,9 @@ $max_len = 5;
 				<div class="slide" id="container">
 					<ul>
 						<li>
+							<a target="_blank" rel="nofollow" href="http://bbs.whnet.edu.cn/"><img src="res/images/data/byhh.png" title="<h3 style='color:yellow'>白云黄鹤BBS</h3><hr/>" /></a>
+						</li>
+						<li>
 							<a target="_blank" rel="nofollow" href="http://img.hust.cc/"><img src="res/images/data/img.png" title="<h3 style='color:yellow'>图片优化压缩</h3><hr/>" /></a>
 						</li>
 						<li>

@@ -3,9 +3,9 @@ $sites = array();
 //热门网站
 $sites_hot = array(
 	array('name'=>'蝴蝶HUDBT','url'=>'https://www.kmgtp.org'),
+	array('name'=>'白云黄鹤BBS','url'=>'http://bbs.whnet.edu.cn/'),
 	array('name'=>'华中大新闻网','url'=>'http://news.hustonline.net/'),
 	array('name'=>'海投网|宣讲会','url'=>'http://xyzp.haitou.cc/'),
-	array('name'=>'白云黄鹤BBS','url'=>'http://bbs.whnet.edu.cn/'),
 	array('name'=>'华中大地图','url'=>'http://map.hustonline.net/'),
 	array('name'=>'华中大图书馆','url'=>'http://www.lib.hust.edu.cn/'),
 	array('name'=>'本科生就业网','url'=>'http://job.hust.edu.cn/show/index.html'),
