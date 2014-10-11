@@ -11,7 +11,7 @@ $max_len = 5;
 	<title>
 		华中大导航网 - 华中大网址导航 - 华中大学子网 - 华中大学子上网首页
 	</title>
-	<meta name="keywords" content="HUST,HUST.CC,华中大,华中科技大学,huster,华中大导航网,华中大学子,华中大学子网,华中大网址导航,华中科技大学网址导航,华中大学子网址导航,华中大学子上网首页" />
+	<meta name="keywords" content="HUST,HUST.CC,华中大,华中科技大学,huster,Hust导航,Hust上网首页,华中大导航网,华中大学子,华中大学子网,华中大网址导航,华中科技大学网址导航,华中大学子网址导航,华中大学子上网首页" />
 	<meta name="description" content="HUST.CC，一个简单而全面的华中大学子网址导航，Huster们从这里发现有趣的网站吧。" />
 	<script type="text/javascript" src="./res/js/jquery.1.9.0.min.js"></script>
 	<script type="text/javascript" src="./res/js/jquery.sliphover.min.js"></script>
@@ -117,7 +117,7 @@ $max_len = 5;
 							<a target="_blank" rel="nofollow" href="http://img.hust.cc/"><img src="res/images/data/img.png" title="<h3 style='color:yellow'>图片优化压缩</h3><hr/>" /></a>
 						</li>
 						<li>
-							<a target="_blank" rel="nofollow" href="http://lib.hust.cc/"><img src="res/images/data/lib.png" title="<h3 style='color:yellow'>移动图书管</h3><hr/>" /></a>
+							<a target="_blank" rel="nofollow" href="http://lib.hust.cc/"><img src="res/images/data/lib.png" title="<h3 style='color:yellow'>移动图书馆</h3><hr/>" /></a>
 						</li>
 						<li>
 							<a target="_blank" rel="nofollow" href="http://alarm.hust.cc/"><img src="res/images/data/alarm.png" title="<h3 style='color:yellow'>在线定时器</h3><hr/>" /></a>
