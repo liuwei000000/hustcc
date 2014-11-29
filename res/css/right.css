@@ -3,7 +3,7 @@
 .u-tt h2,.u-tt .h2{display:block;position:relative;padding:15px 10px;height:24px;line-height:24px;border-bottom:3px solid #d60000;font-size:14px;padding-left:45px}
 .u-tt i.i2{position:absolute;top:19px;left:12px;width:17px;height:17px;background:url(../images/sprite.png) no-repeat 9999px 9999px;background-position:-75px -64px}
 .m-pd{margin:-15px 0 0;font:12px/1.14 arial,\5b8b\4f53}
-.m-pd .itm{position:relative;zoom:1}
+.m-pd .itm{position:relative;zoom:1;border-radius:5px;}
 .m-pd h3{position:absolute;left:5px;top:50%;width:31px;height:26px;margin-top:-13px;overflow:hidden;text-indent:-2000px;background:url(../images/sprite.png) no-repeat 9999px 9999px}
 .m-pd h3.i1{background-position:-143px -60px}
 .m-pd .itm{position:relative;zoom:1}
@@ -12,6 +12,9 @@
 .m-pd li{display:inline;float:left;margin:0 10px;line-height:25px;white-space:nowrap}
 li{list-style:none}
 .m-pd li{display:inline;float:left;margin:0 10px;line-height:25px;white-space:nowrap}
+.m-pd div.byhh ul {list-style-type:decimal;}
+.m-pd div.byhh li{display:block;float:none;margin:0 10px;line-height:25px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.m-pd div.byhh h3 {background:url(../images/sprite.png) no-repeat 9999px 9999px;background-position:-100px -60px}
 .m-pd .itm-even{background:#f0f0f0}
 .m-pd h3.i2{background-position:-185px -60px}
 .m-pd h3.i3{background-position:-231px -60px}

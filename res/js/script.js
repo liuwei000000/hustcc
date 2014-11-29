@@ -36,7 +36,7 @@ $('#h-waterfall .more a').qtip({
 function returnPageTop() {
 	var topVss = $(window).scrollTop();
 	if (topVss > 5) {
-		$(".returnTop > .box").stop(true, false).animate({bottom: 200}, "fast");
+		$(".returnTop > .box").stop(true, false).animate({bottom: 100}, "fast");
 	} else {
 		$(".returnTop > .box").animate({bottom: -60}, "fast");
 	}

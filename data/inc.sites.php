@@ -2,7 +2,7 @@
 $sites = array();
 //热门网站
 $sites_hot = array(
-	array('name'=>'蝴蝶HUDBT','url'=>'https://www.kmgtp.org'),
+	array('name'=>'蝴蝶HUDBT','url'=>'http://hudbt.hust.edu.cn/'),
 	array('name'=>'白云黄鹤BBS','url'=>'http://bbs.whnet.edu.cn/'),
 	array('name'=>'华中大新闻网','url'=>'http://news.hustonline.net/'),
 	array('name'=>'海投网|宣讲会','url'=>'http://xyzp.haitou.cc/'),
@@ -94,6 +94,8 @@ $sites_team = array(
 	array('url'=>'http://www.hustunique.com/', 'name'=>'联创团队'),
 	array('url'=>'http://nadc.org.cn/', 'name'=>'网络研发中心'),
 	array('url'=>'http://page.renren.com/601262757', 'name'=>'我为人人电脑服务队'),
+	array('url'=>'http://page.renren.com/601696614', 'name'=>'小红帽'),
+	array('url'=>'http://page.renren.com/601288257', 'name'=>'华中大自行车协会'),
 	array('url'=>'http://page.renren.com/600005916', 'name'=>'校学生会'),
 	array('url'=>'http://page.renren.com/600996187', 'name'=>'研究生会'),
 	array('url'=>'http://page.renren.com/601062016', 'name'=>'大学生新闻中心'),

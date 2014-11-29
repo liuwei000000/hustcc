@@ -45,7 +45,7 @@ a{blr:expression(this.onFocus=this.blur());outline:none;}
 .footer {margin:5px auto;padding:10px 10px;font: 12px/1.14 Microsoft YaHei,Tahoma,Helvetica,Arial,simsun;border-top:1px solid #cfcfcf;}
 /*返回顶部*/
 .returnTop{ font-size:12px;width:955px; height:0px; position:relative; margin:0px auto;}
-.returnTop .box{ position:fixed; display:block; _display:none; width:36px; height:36px; margin-left:800px; bottom:-60px; background:url(./images/returnBgX.png) repeat ; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;   cursor:pointer;}
+.returnTop .box{ position:fixed; display:block; _display:none; width:36px; height:36px; margin-left:970px; bottom:-60px; background:url(./images/returnBgX.png) repeat ; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;   cursor:pointer;}
 .returnTop .box a{ display:block; width:36px; height:36px;  float: left; background:url(./images/returnTopIco.gif) no-repeat 11px 10px; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;  }
 .returnTop .box a:hover{background-color:#6e6e6e;}
 .returnTop .box span{ float: left; line-height:36px; color:#e6e6e6; margin-left:6px;}

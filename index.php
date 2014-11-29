@@ -2,6 +2,12 @@
 <?php 
 require_once('inc/301.php');
 require_once('data/inc.sites.php');
+//白云黄鹤十大帖子
+require_once('data/class.mysql.inc.php');
+require_once('data/class.byhh.inc.php');
+$byhhDao = new ByhhDao();
+$byhh_top10 = $byhhDao->findAll();
+Mysql::close();
 $max_len = 5;
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:wb="http://open.weibo.com/wb">
@@ -11,9 +17,9 @@ $max_len = 5;
 	<title>
 		华中大导航网 - 华中大网址导航 - 华中大学子网 - 华中大学子上网首页
 	</title>
-	<meta name="keywords" content="HUST,HUST.CC,华中大,华中科技大学,huster,Hust导航,Hust上网首页,华中大导航网,华中大学子,华中大学子网,华中大网址导航,华中科技大学网址导航,华中大学子网址导航,华中大学子上网首页" />
-	<meta name="description" content="HUST.CC，一个简单而全面的华中大学子网址导航，Huster们从这里发现有趣的网站吧。" />
-	<script type="text/javascript" src="./res/js/jquery.1.9.0.min.js"></script>
+	<meta name="keywords" content="HUST,HUST.CC,华中大,华中科技大学,huster,Hust导航,Hust上网首页,华中大导航网,华中大学子,华中大学子网,华中大网址导航,华中科技大学网址导航,华中大学子网址导航,华中大学子上网首页,白云黄鹤十大帖子" />
+	<meta name="description" content="HUST.CC，一个简单而全面的华中大学子网址导航，同时提供白云黄鹤十大帖子以及学校要闻汇总，Huster们从这里发现有趣的网站吧。" />
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
 	<script type="text/javascript" src="./res/js/jquery.sliphover.min.js"></script>
 	<script type="text/javascript" src="./res/js/cascade.js"></script>
 	<link href="./res/css/reset.css" rel="stylesheet" type="text/css">
@@ -22,6 +28,8 @@ $max_len = 5;
 	<link href="./res/css/right.css" rel="stylesheet" type="text/css">
 	<link href="./res/css/cascade.css" rel="stylesheet" type="text/css">
 	<link href="./res/css/jquery.qtip.min.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="favicon.ico"/>
+	<link rel="bookmark" href="favicon.ico"/>
 	<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
@@ -180,24 +188,44 @@ $max_len = 5;
 						<div class="itm">
 							<h3 class="i2">Hust.cc</h3> 
 							<ul> 
-								<li><a href="http://50vip.com/" rel="nofollow" target="_blank">红色石头</a></li>
-								<li><a href="http://www.atool.org/" rel="nofollow" target="_blank">在线工具</a></li>
-								<li><a href="http://alarm.hust.cc/" rel="nofollow" target="_blank">在线定时器</a></li>
-								<li><a href="http://diff.hust.cc/" rel="nofollow" target="_blank">文本Diff</a></li>
-								<li><a href="http://img.hust.cc/" rel="nofollow" target="_blank">图片优化</a></li>
+								<li><a href="http://50vip.com/" target="_blank">红色石头</a></li>
+								<li><a href="http://www.atool.org/" target="_blank">在线工具</a></li>
+								<li><a href="http://img.hust.cc/" target="_blank">在线图片优化</a></li>
+								<li><a href="http://upan.hust.cc/" target="_blank">在线云U盘</a></li>
+								<li><a href="http://json.hust.cc/" target="_blank">Json编辑器</a></li>
+								<li><a href="http://alarm.hust.cc/" target="_blank">在线闹钟</a></li>
+								<li><a href="http://diff.hust.cc/" target="_blank">文本Diff</a></li>
+								<li><a href="http://sleep.hust.cc/" target="_blank">睡眠帮助</a></li>
 								<li><a href="http://format.hust.cc/" rel="nofollow" target="_blank">代码格式化</a></li>
 								<li><a href="http://jquery.hust.cc/" rel="nofollow" target="_blank">Jquery文档</a></li>
 								<li><a href="http://lua.hust.cc/" rel="nofollow" target="_blank">Lua文档</a></li>
-								<li><a href="http://lib.hust.cc/" rel="nofollow" target="_blank">华中大图书馆</a></li>
-								<li><a href="http://md.hust.cc/" rel="nofollow" target="_blank">MD编辑器</a></li>
+								<li><a href="http://lib.hust.cc/" target="_blank">华中大图书馆</a></li>
+								<li><a href="http://md.hust.cc/" rel="nofollow" target="_blank">MarkDown便签</a></li>
 							</ul> 
 						</div>
+						<?php
+						$byhh_len = count($byhh_top10);
+						if ($byhh_top10 != null && $byhh_len > 0) {
+						?>
+						<div class="itm itm-even byhh">
+							<a href="byhh_spider.php" rel="nofollow"><h3 class="i1" title="白云黄鹤十大帖子">BYHH十大</h3></a>
+							<ul>
+							<?php 
+							for ($i = 0; $i < $byhh_len; $i ++) {
+								echo "<li><a rel='nofollow' title='" . ($byhh_top10[$i]['by_id'] + 1) . "、" . $byhh_top10[$i]['by_title']. "' href='" .$byhh_top10[$i]['by_url']. "' target='_blank'>" .($byhh_top10[$i]['by_id'] + 1) . ". " . $byhh_top10[$i]['by_title']. "</a></li>";
+							}
+							?>
+							</ul>
+						</div>
+						<?php 
+						}
+						?>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="footer">
-			<span>© 2014  <a href="http://weibo.com/husterscn" target="_blank" title="华中大学子网" rel="nofollow">Hust.cc</a> 版权所有&nbsp;&nbsp;&nbsp;&nbsp;<wb:publish action="pubilish" type="web" language="zh_cn" button_type="red" button_size="small" button_text="分享" uid="3505855672" default_text="华中大网址导航，Huster最好的上网首页 http://www.hust.cc/" tag="华中大网址导航" refer="y" default_image="http%3A%2F%2Fwww.hust.cc%2Fres%2Fimages%2Fshare%2Fshare.png,http%3A%2F%2Fwww.hust.cc%2Fres%2Fimages%2Fdata%2Fimg1.jpg" appkey="54bvjH" ></wb:publish></span>
+			<span>© 2014  <a href="http://weibo.com/husterscn" target="_blank" title="华中大导航网" rel="nofollow">Hust.cc</a> 版权所有 <a target="_blank" href="http://www.hust.cc/comment.html">『申请收录』</a>&nbsp;&nbsp;&nbsp;&nbsp;<wb:publish action="pubilish" type="web" language="zh_cn" button_type="red" button_size="small" button_text="分享" uid="3505855672" default_text="华中大网址导航，Huster最好的上网首页 http://www.hust.cc/ 。Husters，你们需要把自己的网站加入进来吗？赶紧私信联系我吧！" tag="华中大网址导航" refer="y" default_image="http%3A%2F%2Fwww.hust.cc%2Fres%2Fimages%2Fshare%2Fshare1.png,http%3A%2F%2Fwww.hust.cc%2Fres%2Fimages%2Fshare%2Fshare2.png,http%3A%2F%2Fwww.hust.cc%2Fres%2Fimages%2Fshare%2Fshare3.jpg" appkey="54bvjH" ></wb:publish></span>
 		</div>
 		<!--返回顶部-->
 		<div class="returnTop">
